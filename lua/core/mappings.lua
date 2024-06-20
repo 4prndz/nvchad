@@ -24,7 +24,7 @@ M.general = {
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
     -- save
-    ["<D-s>"] = { "<cmd> w <CR>", "Save file" },
+    ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
 
     -- Copy all
     ["<C-c>"] = { "<cmd> %y+ <CR>", "Copy whole file" },
@@ -60,7 +60,9 @@ M.general = {
         end
       end,
       "Close split"
-    }
+    },
+
+    ["<C-a>"] = { "ggVG", "Select all" },
   },
 
   t = {
@@ -94,7 +96,7 @@ M.tabufline = {
       "Goto next buffer",
     },
 
-    ["<C-tab>"] = {
+    ["<S-tab>"] = {
       function()
         require("nvchad.tabufline").tabuflinePrev()
       end,
@@ -310,8 +312,7 @@ M.nvterm = {
       "Toggle floating term",
     },
 
-
-    ["<C-h>"] = {
+    ["<C-\\>"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
@@ -335,7 +336,7 @@ M.nvterm = {
       "Toggle floating term",
     },
 
-    ["<C-h>"] = {
+    ["<C-\\>"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
@@ -468,6 +469,7 @@ M.gitsigns = {
       end,
       "Toggle deleted",
     },
+
   },
 }
 
