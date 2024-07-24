@@ -1,7 +1,7 @@
 local M = {}
 
 M.options = {
-  nvchad_branch = "v2.0",
+  nvchad_branch = "v2.5",
 }
 
 M.ui = {

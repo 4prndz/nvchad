@@ -23,7 +23,7 @@ local options = {
   view = {
     relativenumber = true,
     number = true,
-    side = "right",
+    side = "left",
   },
   git = {
     enable = true,
